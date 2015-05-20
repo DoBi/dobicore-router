@@ -1,0 +1,29 @@
+language: php
+
+php:
+  - 5.4
+  - 5.5
+  - 5.6
+  - hhvm
+  - hhvm-nightly
+  - nightly
+
+matrix:
+  allow_failures:
+    - php: hhvm
+    - php: hhvm-nightly
+
+before_script:
+  # Install graphviz for the creation of the documentation
+  - "sudo apt-get install graphviz 2>&1 | tail -n 2"
+  - composer self-update
+  - composer install --prefer-source --no-interaction
+
+script:
+  - vendor/bin/phpunit
+  - vendor/bin/phpdoc run -d Classes/ -t doc/
+
+after_success:
+  # Only push the documentation to the gh-pages if this is no pull request,
+  # it is the master branch and it is build with PHP 5.6
+  # - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && test $(php -v | grep 'PHP 5' | sed 's/.*PHP \([^-]*\).*/\1/' | cut -c 1-3) == "5.6" && bash gh-pages.sh

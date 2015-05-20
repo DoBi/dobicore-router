@@ -1,0 +1,37 @@
+{
+    "name": "dobicore/router",
+    "repositories": [
+        {
+            "type":"package",
+            "package": {
+              "name": "dobicore-logger",
+              "version":"1.0",
+              "source": {
+                  "url": "https://github.com/DoBi/dobicore-logger.git",
+                  "type": "git",
+                  "reference":"master"
+                }
+            }
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "dobicore-logger": "1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.6",
+        "phpdocumentor/phpdocumentor": "^2.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "DoBi\\Core\\Router\\": "Classes/"
+        }
+    },
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Dominik Bittner",
+            "email": "DoBi-tyndur@gmx.net"
+        }
+    ]
+}
