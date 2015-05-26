@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b6bb22929736420af88584cc64fa5d33",
+    "hash": "74db1e2b054647947aa33eac534c12a2",
     "packages": [
         {
             "name": "dobicore-logger",
-            "version": "1.0",
+            "version": "0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/DoBi/dobicore-logger.git",
