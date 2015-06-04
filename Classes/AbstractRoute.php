@@ -1,10 +1,14 @@
 <?php
 /**
- * The abstract route for all types of routes
+ * This file is part of dobicore-router.
  *
- * @author Dominik Bittner
+ * For the full copyright and license information, please view the LICENSE.md
+ * file that was distributed with this source code.
+ *
+ * @copyright 2015 Dominik Bittner<DoBi-tyndur@gmx.net>
+ * @license   http://opensource.org/licenses/BSD-3-Clause BSD 3-Clause
+ * @author    Dominik Bittner
  */
-
 
 namespace DoBi\Core\Router;
 
