@@ -1,0 +1,10 @@
+{
+    "Home": {
+        "Class": "HomeController",
+        "Method":"indexAction",
+        "Pattern": {
+            "Cli": ":home",
+            "Http": "/home"
+        }
+    }
+}
